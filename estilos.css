@@ -14,6 +14,7 @@ nav a{
     color : #fff ;
     text-decoration: none;
     display :inline-block ;
+    animation: moverDerecha 1s ease-in;
 }
 header{
     width: 100%;
@@ -31,6 +32,7 @@ header{
     align-items: center;
     justify-content: space-around;
     margin: auto;
+    animation: moverIzquierda 1s ease-in;
 }
 img{
     display: block;
@@ -38,6 +40,7 @@ img{
     object-fit: cover;
     width: auto;
     margin-top: 10px;
+    animation: moverArriba 1.5s ease-in;
 }
 .textos{
     width: 50%;
@@ -45,9 +48,11 @@ img{
 }
 .textos h1{
     font-size: 80px;
+    animation: moverIzquierda 1s ease-in;
 }
 .textos h2{
     font-size: 30px;
+    animation: moverAbajo 1s ease-in;
 }
 .textos a{
     display: inline-block;
@@ -66,4 +71,45 @@ img{
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moverArriba{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moverAbajo{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }
