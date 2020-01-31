@@ -1,0 +1,69 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    position: fixed;
+    top : 20px;
+    left: 20px;
+}
+nav a{
+    color : #fff ;
+    text-decoration: none;
+    display :inline-block ;
+}
+header{
+    width: 100%;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    padding: 0px;
+
+}
+.container{
+    width: 95%;
+    max-width: 1200px;
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+img{
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    width: auto;
+    margin-top: 10px;
+}
+.textos{
+    width: 50%;
+    color: #fff;
+}
+.textos h1{
+    font-size: 80px;
+}
+.textos h2{
+    font-size: 30px;
+}
+.textos a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0px;
+}
+.wave{
+    height: 100px;
+    width: 100%;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
