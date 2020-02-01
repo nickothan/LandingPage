@@ -9,11 +9,17 @@ nav{
     position: fixed;
     top : 20px;
     left: 20px;
+    display: flex;
+    justify-content: flex-start;
 }
 nav a{
     color : #fff ;
     text-decoration: none;
-    display :inline-block ;
+
+}
+.icono{
+    display: block;
+    z-index: 1000000000;
     animation: moverDerecha 1s ease-in;
 }
 header{
@@ -72,6 +78,32 @@ img{
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.enlaces{
+    position: fixed;
+    display: flex;
+    top:0;
+    background: #0f0c29;
+    justify-content: space-around;
+    align-items: center ;
+    height: 100vh;
+    right:0;
+    flex-direction:column ;
+    width: 100%;
+    transition: all 1s ease;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.uno{
+-webkit-clip-path: circle(0% at 0 0);
+clip-path: circle(0% at 0 0);
+}
+.dos{    
+-webkit-clip-path: circle(150% at 0 0);
+clip-path: circle(150% at 1% 1%);
+}
+
 
 @keyframes moverIzquierda{
     0%{
